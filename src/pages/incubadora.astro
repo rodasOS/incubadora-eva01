@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 const response = await fetch('http://localhost:4321/api/ejemplo.json');
+console.log(response)
 const data = await response.json();
 
 interface User {
