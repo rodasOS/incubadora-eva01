@@ -1,8 +1,8 @@
 ---
 import Layout from '../layouts/Layout.astro';
-const response = await fetch('http://localhost:4321/api/ejemplo.json');
-console.log(response)
+const response: Response | User[] = await fetch('http://localhost:4321/api/ejemplo.json');
 const data = await response.json();
+console.log(data)
 
 interface User {
 	author: string;
